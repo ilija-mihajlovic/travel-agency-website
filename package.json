@@ -1,0 +1,23 @@
+{
+  "name": "travel-agency-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilija-mihajlovic/travel-agency-website.git"
+  },
+  "keywords": [],
+  "author": "Ilija Mihajlovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilija-mihajlovic/travel-agency-website/issues"
+  },
+  "homepage": "https://github.com/ilija-mihajlovic/travel-agency-website#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
