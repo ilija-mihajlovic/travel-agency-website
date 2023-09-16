@@ -1,9 +1,17 @@
 @mixin generate-typography-classes($map) {
-    @each $key, $value in $map {
-      .#{$key} {
-        @each $property, $property-value in $value {
-          #{$property}: $property-value;
-        }
+  @each $key, $value in $map {
+    .#{$key} {
+      @each $property, $property-value in $value {
+        #{$property}: $property-value;
       }
     }
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
