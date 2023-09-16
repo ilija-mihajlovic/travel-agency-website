@@ -11,41 +11,45 @@ $color-black: #000;
 
 // Typography
 $typography-list: (
-  h1: (
-    font-size: 3rem,
-    font-weight: 700,
-    line-height: 1.2,
-    margin-bottom: 2rem,
-  ),
-  h2: (
-    font-size: 2.5rem,
-    font-weight: 700,
-    line-height: 1.2,
-    margin-bottom: 2rem,
-  ),
-  h3: (
-    font-size: 2rem,
-    font-weight: 700,
-    line-height: 1.2,
-    margin-bottom: 2rem,
-  ),
-  h4: (
-    font-size: 1.5rem,
-    font-weight: 700,
-    line-height: 1.2,
-    margin-bottom: 2rem,
-  ),
-  h5: (
-    font-size: 1.25rem,
-    font-weight: 700,
-    line-height: 1.2,
-    margin-bottom: 2rem,
-  ),
+    h1: (
+        font-size: 3rem,
+        font-weight: 700,
+        line-height: 1.2,
+        margin-bottom: 2rem,
+    ),
+    h2: (
+        font-size: 2.5rem,
+        font-weight: 700,
+        line-height: 1.2,
+        margin-bottom: 2rem,
+    ),
+    h3: (
+        font-size: 2rem,
+        font-weight: 700,
+        line-height: 1.2,
+        margin-bottom: 2rem,
+    ),
+    h4: (
+        font-size: 1.5rem,
+        font-weight: 700,
+        line-height: 1.2,
+        margin-bottom: 2rem,
+    ),
+    h5: (
+        font-size: 1.25rem,
+        font-weight: 700,
+        line-height: 1.2,
+        margin-bottom: 2rem,
+    ),
 );
 
 $typography-list-with-important: add-important-to-all-properties(
-  $typography-list
+    $typography-list
 );
+
+$default-font-size: 1.6rem;
+
+// Media queries breakpoints
 
 // Grid
 $grid-width: 114rem;
