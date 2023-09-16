@@ -1,3 +1,3 @@
 # travel-agency-website
 
-Run ```sass --watch scss:css``` to start compiling scss to css
+Run ```npm i && npm run compile``` to start compiling scss to css
