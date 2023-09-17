@@ -1,19 +1,19 @@
 @function add-important-to-all-properties($map) {
-  $new-map: ();
+    $new-map: ();
 
-  @each $key, $value in $map {
-    $new-properties: ();
+    @each $key, $value in $map {
+        $new-properties: ();
 
-    @each $property, $property-value in $value {
-      $new-property-value: #{$property-value} !important;
-      $new-properties: map-merge(
-        $new-properties,
-        (#{$property}: $new-property-value)
-      );
+        @each $property, $property-value in $value {
+            $new-property-value: #{$property-value} !important;
+            $new-properties: map-merge(
+                $new-properties,
+                (#{$property}: $new-property-value)
+            );
+        }
+
+        $new-map: map-merge($new-map, (#{$key}: $new-properties));
     }
 
-    $new-map: map-merge($new-map, (#{$key}: $new-properties));
-  }
-
-  @return $new-map;
+    @return $new-map;
 }
